@@ -295,3 +295,37 @@ I finally plotted the loss of training to track the trend of the learning. I pre
 [image5]: ./images/output_10_1.png "Loss Graph"
 [image6]: ./images/output_11_0.png "Another Random"
 [image7]: ./images/output_11_1.png "Another Flipped"
+
+---
+## Rreview
+This was an excellent effort!
+Congratulations on successfully completing this project!
+
+You may also keep the following resources as a reference -
+
+https://www.youtube.com/watch?v=rpxZ87YFg0M
+http://selfdrivingcars.mit.edu/
+http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
+http://jacobgil.github.io/deeplearning/vehicle-steering-angle-visualizations
+http://medium.com/udacity/teaching-a-machine-to-steer-a-car-d73217f2492c
+http://chatbotslife.com/using-augmentation-to-mimic-human-driving-496b569760a9
+Michael A. Nielsen, "Neural Networks and Deep Learning", Determination Press, 2015
+Keep up the good work and all the best for your future projects!
+
+- The code in model.py uses a Python generator, if needed, to generate data for training rather than storing the training data in memory. The model.py code is clearly organized and comments are included where needed.
+	- Well done using a generator to generate data. This is especially useful when training using a CPU.
+In case you want to gain a better intuition about Python generators, you may refer to https://www.youtube.com/watch?v=bD05uGo_sVI
+	- The code is properly organized and comments have been used where appropriate. Good!
+
+- The neural network uses convolution layers with appropriate filter sizes. Layers exist to introduce nonlinearity into the model. The data is normalized in the model.
+	- The network has an adequate number of convolution layers.
+	- Activation function has been used to introduce nonlinearity in the model. Please note that a faster alternative to the relu activation is the elu activation. You may refer to https://arxiv.org/pdf/1511.07289v1.pdf
+	- Well done normalizing the data in the model.
+	
+- Train/validation/test splits have been used, and the model uses dropout layers or other methods to reduce overfitting.
+	- The dataset has been split appropriately.
+	- Well done using dropout layers to reduce overfitting. For a detailed analysis of dropouts, you may refer to https://pgaleone.eu/deep-learning/regularization/2017/01/10/anaysis-of-dropout/
+	
+- The README provides sufficient details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.
+	- Using the NVIDIA architecture is perfectly justified in this situation.
+	- You may also use Keras to visualize your model. You can find the documentation at https://keras.io/visualization/
